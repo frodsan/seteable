@@ -3,8 +3,12 @@ module Seteable
     base.extend(ClassMethods)
   end
 
-  def self.deepclone(obj)
-    return Marshal.load(Marshal.dump(obj))
+  def self.deepclone(hash)
+    default_proc, hash.default_proc = hash.default_proc, nil
+
+    return Marshal.load(Marshal.dump(hash))
+  ensure
+    hash.default_proc = default_proc
   end
 
   def settings
@@ -14,6 +18,7 @@ module Seteable
   module ClassMethods
     def inherited(subclass)
       subclass.settings.replace(Seteable.deepclone(settings))
+      subclass.settings.default_proc = proc { |h, k| h[k] = settings[k] }
     end
 
     def settings
