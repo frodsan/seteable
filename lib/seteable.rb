@@ -1,5 +1,6 @@
 module Seteable
   def self.included(base)
+    base.include(InstanceMethods)
     base.extend(ClassMethods)
   end
 
@@ -11,8 +12,10 @@ module Seteable
     hash.default_proc = default_proc
   end
 
-  def settings
-    return self.class.settings
+  module InstanceMethods
+    def settings
+      return self.class.settings
+    end
   end
 
   module ClassMethods
