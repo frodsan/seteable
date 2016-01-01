@@ -57,13 +57,6 @@ Child.settings[:foo] # => "foo"
 Child.settings[:bar] # => "bar"
 ```
 
-Installation
-------------
-
-```
-$ gem install seteable
-```
-
 Contributing
 ------------
 
