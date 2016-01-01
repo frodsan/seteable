@@ -3,10 +3,15 @@ Gem::Specification.new do |s|
   s.version     = "1.2.0"
   s.summary     = "Define settings for your library"
   s.description = s.summary
-  s.authors     = ["Francesco Rodríguez"]
-  s.email       = ["frodsan@protonmail.ch"]
-  s.homepage    = "https://github.com/harmoni/seteable"
+  s.author      = "Francesco Rodríguez"
+  s.email       = "frodsan@protonmail.ch"
+  s.homepage    = "https://github.com/frodsan/seteable"
   s.license     = "MIT"
 
-  s.files = `git ls-files`.split("\n")
+  s.files      = Dir["LICENSE", "README.md", "lib/**/*.rb"]
+  s.test_files = Dir["test/**/*.rb"]
+
+  s.add_development_dependency "minitest", "~> 5.8"
+  s.add_development_dependency "minitest-sugar", "~> 2.1"
+  s.add_development_dependency "rake", "~> 10.0"
 end
