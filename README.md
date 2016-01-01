@@ -1,7 +1,28 @@
-seteable
+Seteable [![Build Status](https://travis-ci.org/frodsan/seteable.svg)](https://travis-ci.org/frodsan/seteable)
 --------
 
 Define settings for your library.
+
+Installation
+------------
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem "seteable"
+```
+
+And then execute:
+
+```
+$ bundle
+```
+
+Or install it yourself as:
+
+```
+$ gem install seteable
+```
 
 Usage
 -----
@@ -36,8 +57,6 @@ Child.settings[:foo] # => "foo"
 Child.settings[:bar] # => "bar"
 ```
 
-Check the [posten][posten] gem for a real example.
-
 Installation
 ------------
 
@@ -45,4 +64,33 @@ Installation
 $ gem install seteable
 ```
 
-[posten]: https://github.com/harmoni/posten
+Contributing
+------------
+
+Fork the project with:
+
+```
+$ git clone git@github.com:frodsan/seteable.git
+```
+
+To install dependencies, use:
+
+```
+$ bundle install
+```
+
+To run the test suite, do:
+
+```
+$ rake test
+```
+
+For bug reports and pull requests use [GitHub][issues].
+
+License
+-------
+
+Seteable is released under the [MIT License][mit].
+
+[mit]: http://www.opensource.org/licenses/MIT
+[issues]: https://github.com/frodsan/seteable/issues
