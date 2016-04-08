@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Seteable
   def self.included(base)
     base.include(InstanceMethods)
@@ -5,16 +7,17 @@ module Seteable
   end
 
   def self.deepclone(hash)
-    default_proc, hash.default_proc = hash.default_proc, nil
+    default_proc = hash.default_proc
+    hash.default_proc = nil
 
-    return Marshal.load(Marshal.dump(hash))
+    Marshal.load(Marshal.dump(hash))
   ensure
     hash.default_proc = default_proc
   end
 
   module InstanceMethods
     def settings
-      return self.class.settings
+      self.class.settings
     end
   end
 
@@ -25,7 +28,7 @@ module Seteable
     end
 
     def settings
-      return @settings ||= {}
+      @settings ||= {}
     end
   end
 end
