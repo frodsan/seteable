@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
   s.name        = "seteable"
-  s.version     = "1.2.0"
+  s.version     = "1.2.1"
   s.summary     = "Define settings for your library"
   s.description = s.summary
   s.author      = "Francesco Rodríguez"
-  s.email       = "frodsan@protonmail.ch"
-  s.homepage    = "https://github.com/frodsan/seteable"
+  s.email       = "hello@frodsan.com"
+  s.homepage    = "https://gitlab.com/frodsan/seteable"
   s.license     = "MIT"
 
   s.files      = Dir["LICENSE", "README.md", "lib/**/*.rb"]
