@@ -1,4 +1,4 @@
-Seteable
+Seteable [![Build Status](https://travis-ci.org/frodsan/seteable.svg)](https://travis-ci.org/frodsan/seteable)
 ========
 
 Define settings for your library.
