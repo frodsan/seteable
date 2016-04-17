@@ -15,12 +15,6 @@ module Seteable
     hash.default_proc = default_proc
   end
 
-  module InstanceMethods
-    def settings
-      self.class.settings
-    end
-  end
-
   module ClassMethods
     def inherited(subclass)
       subclass.settings.replace(Seteable.deepclone(settings))
@@ -29,6 +23,16 @@ module Seteable
 
     def settings
       @settings ||= {}
+    end
+
+    def set(key, value)
+      settings[key] = value
+    end
+  end
+
+  module InstanceMethods
+    def settings
+      self.class.settings
     end
   end
 end

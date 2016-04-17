@@ -54,4 +54,14 @@ class SeteableTest < Minitest::Test
     assert_equal "bar", Bar.settings[:foo]
     assert_equal "foo", Baz.settings[:foo]
   end
+
+  test "set helper method" do
+    class Thor
+      include Seteable
+    end
+
+    Thor.set(:foo, "foo")
+
+    assert_equal "foo", Thor.settings[:foo]
+  end
 end
