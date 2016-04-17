@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "seteable"
-  s.version     = "1.2.1"
+  s.version     = "1.3.0"
   s.summary     = "Define settings for your library"
   s.description = s.summary
   s.author      = "Francesco Rodríguez"
