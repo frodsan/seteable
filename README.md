@@ -38,6 +38,9 @@ Base.settings[:foo] = "foo"
 
 Base.settings[:foo]     # => "foo"
 Base.new.settings[:foo] # => "foo"
+
+Base.set(:bar, "bar")
+Base.settings[:bar]     # => "bar"
 ```
 
 Settings are inherited:
