@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.author      = "Francesco Rodríguez"
   s.email       = "hello@frodsan.com"
-  s.homepage    = "https://gitlab.com/frodsan/seteable"
+  s.homepage    = "https://github.com/frodsan/seteable"
   s.license     = "MIT"
 
   s.files      = Dir["LICENSE", "README.md", "lib/**/*.rb"]

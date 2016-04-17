@@ -1,4 +1,4 @@
-Seteable [![Build Status](https://gitlab.com/frodsan/seteable/badges/master/build.svg)](https://gitlab.com/frodsan/seteable/builds)
+Seteable
 ========
 
 Define settings for your library.
@@ -63,7 +63,7 @@ Contributing
 Fork the project with:
 
 ```
-$ git clone git@gitlab.com:frodsan/seteable.git
+$ git clone git@github.com:frodsan/seteable.git
 ```
 
 To install dependencies, use:
@@ -78,7 +78,7 @@ To run the test suite, do:
 $ rake test
 ```
 
-For bug reports and pull requests use [GitLab][issues].
+For bug reports and pull requests use [GitHub][issues].
 
 License
 -------
@@ -86,4 +86,4 @@ License
 Seteable is released under the [MIT License][mit].
 
 [mit]: http://www.opensource.org/licenses/MIT
-[issues]: https://gitlab.com/frodsan/seteable/issues
+[issues]: https://github.com/frodsan/seteable/issues
